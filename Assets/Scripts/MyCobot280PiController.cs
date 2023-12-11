@@ -23,16 +23,16 @@ public class MyCobot280PiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // ros = ROSConnection.GetOrCreateInstance();
-        // ros.Subscribe<JointStateMsg>("/joint_states", Callback);
+        ros = ROSConnection.GetOrCreateInstance();
+        ros.Subscribe<JointStateMsg>("/joint_states", Callback);
         //
-        // joint = new ArticulationBody[6];
-        // joint[0] = joint2;
-        // joint[1] = joint3;
-        // joint[2] = joint4;
-        // joint[3] = joint5;
-        // joint[4] = joint6;
-        // joint[5] = joint6Flange;
+        joint = new ArticulationBody[6];
+        joint[0] = joint2;
+        joint[1] = joint3;
+        joint[2] = joint4;
+        joint[3] = joint5;
+        joint[4] = joint6;
+        joint[5] = joint6Flange;
         ArticulationDrive drive = leftGripper.zDrive;
         drive.targetVelocity = 1;
         leftGripper.zDrive = drive;

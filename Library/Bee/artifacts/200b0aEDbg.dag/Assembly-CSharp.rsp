@@ -326,7 +326,7 @@
 -r:"/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet/AssimpNet.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.3/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.AI.Navigation.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.AI.Navigation.ref.dll"
@@ -376,6 +376,7 @@
 "Assets/Robotic industrial dynamic arm/Scripts/RoboticArm_tools.cs"
 "Assets/Robotic industrial dynamic arm/Scripts/Screw.cs"
 "Assets/RosMessages/Sensor/msg/JointStateMsg.cs"
+"Assets/Scripts/GripperController.cs"
 "Assets/Scripts/MyCobot280PiController.cs"
 -langversion:9.0
 
