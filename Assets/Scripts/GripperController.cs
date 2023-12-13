@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,8 @@ public class GripperController : MonoBehaviour
 {
     public ArticulationBody left;
     public ArticulationBody right;
-    public float pickLimit = 0.5f;
-    public float placeLimit = 0.5f;
+    public float pickLimit = 0.01f;
+    public float placeLimit = 0.01f;
 
     public void OnPickButton()
     {
@@ -31,5 +32,17 @@ public class GripperController : MonoBehaviour
 
         left.xDrive = leftDrive;
         right.xDrive = rightDrive;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            OnPickButton();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            OnPlaceButton();
+        }
     }
 }
